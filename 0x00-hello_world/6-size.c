@@ -1,2 +1,2 @@
 #!/bin/bash
-sizeof ();
+gcc -wall sizeof ();
