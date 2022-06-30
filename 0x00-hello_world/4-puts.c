@@ -1,16 +1,11 @@
 #include <stdio.h>
-
-
-
 /**
+ * main-Entry point
  *
- *  * main - Print a string
+ * decription-no use of printf
  *
- *   * Description: use printf
- *
- *    * Return: 0
- *
- *     */
+ * Return:Always 0 (succes)
+ */
 
 
 
