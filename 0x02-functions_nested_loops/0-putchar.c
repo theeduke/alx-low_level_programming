@@ -1,4 +1,4 @@
-#include <main.h>
+#include <stdio.h>
 /*
  * main - Entry point
  *
@@ -11,8 +11,8 @@ int main(void)
 
 	for (a = 0; a <= 8; a++)
 	{
-		_putchar(word[a]);
+		putchar(word[a]);
 	}
-	_putchar("\n");
+	putchar('\n');
 	return (0);
 }
