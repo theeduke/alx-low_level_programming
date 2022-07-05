@@ -1,18 +1,21 @@
 #include "main.c"
-/*
+/**
  * _islower - Entry point
  *
+ *@c: An input character
  * Return: 0 (success)
  */
 int _islower(int c)
 {
 	char a;
-	int b = 0;
-	
+	int lower = 0;
+
 	for (a = 'a'; a <= 'z'; a++)
 	{
 		if (a == c)
-		       b = 1;
+		{
+			lower = 1;
+		}
 	}
 	return (b);
 }
