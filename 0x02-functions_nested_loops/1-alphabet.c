@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main- Entry point
  *
- *Return: (0);
+ *Return: 0 (success)
  */
 void print_alphabet(void);
 int main(void)
@@ -11,8 +11,8 @@ int main(void)
 
 	for (ab = 'a'; ab <= 'z'; ab++)
 	{
-		putchar(ab);
+		_putchar(ab);
 	}
-	putchar(' ');
+	_putchar('\n');
 	return (0);
 }	
