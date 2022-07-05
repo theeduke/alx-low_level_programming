@@ -6,13 +6,13 @@
  * Return: 0 (success)
  */
 int _islower(int c)
-{
-	char a;
+{ 
+       char number;
 	int lower = 0;
 
-	for (a = 'a'; a <= 'z'; a++)
+	for (number = 'a'; number <= 'z'; number++)
 	{
-		if (a == c)
+		if (number == c)
 		{
 			lower = 1;
 		}
