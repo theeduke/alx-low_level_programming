@@ -12,7 +12,7 @@ int _isalpha(int c)
 	char lowerCase, upperCase;
 	int upper = 0;
 
-	for (lowerCase = 'a'; lowerCase = 'z'; lowerCase++)
+	for (lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
 	{
 		for (upperCase = 'A'; upperCase <= 'Z'; upperCase++)
 		{
