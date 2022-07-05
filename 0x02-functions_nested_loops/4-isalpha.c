@@ -9,14 +9,14 @@
  */
 int _isalpha(int c)
 {
-	char a, b;
+	char lowerCase, upperCase;
 	int upper = 0;
 
-	for (a = 'a'; a = 'z'; a++)
+	for (lowerCase = 'a'; lowerCase = 'z'; lowerCase++)
 	{
-		for (b = 'A'; b <= 'Z'; b++)
+		for (upperCase = 'A'; upperCase <= 'Z'; upperCase++)
 		{
-			if (c == a || c == b)
+			if (c == lowerCase || c == upperCase)
 				upper = 1;
 		}
 	}
