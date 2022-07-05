@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet_x10 - Entry point
  * Description: prints lower alphabet
  * Return: 0 (success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	char i;
 	int b;
