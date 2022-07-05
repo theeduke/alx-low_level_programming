@@ -1,6 +1,7 @@
 #include "main.c"
 /*
- * print_alphabet_x10 - check main
+ * print_alphabet_x10 - Entry point
+ * Description: prints lower alphabet
  *
  * Return: 0 (success)
  */
