@@ -1,8 +1,8 @@
 #include "main.h"
-/*
- * print_alphabet_x10 - Entry point
+
+/**
+ * main - Entry point
  * Description: prints lower alphabet
- *
  * Return: 0 (success)
  */
 int main(void)
