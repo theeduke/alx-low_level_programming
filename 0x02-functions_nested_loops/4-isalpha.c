@@ -1,10 +1,11 @@
 #include"main.h"
+
 /**
- * _isalpha - Entry point
+ * _isalpha - Check main
  *
  * @c:An input character
  *
- * Return: 1-if its is lower or uppercase
+ * Return: 1 or 0 otherwise
  */
 int _isalpha(int c)
 {
@@ -15,10 +16,8 @@ int _isalpha(int c)
 	{
 		for (b = 'A'; b <= 'Z'; b++)
 		{
-			if (c == a && c == b)
-			{
+			if (c == a || c == b)
 				upper = 1;
-			}
 		}
 	}
 	return (upper);
