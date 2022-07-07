@@ -1,23 +1,37 @@
 #include "main.h"
 /**
- * _isupper - display uppercase letters
- * @c:Varible being sorted
- *
- * Return: 1 or 0 otherwise
+ * _isupper - A function that checks for uppercase character.
+ * @c: An input character
+ * Return: 1 if c is uppercase or 0 otherwise
  */
 int _isupper(int c)
+
 {
-	int cha;
 
-	upper = 0;
+	char uppercase = 'A';
 
-	for (cha == 'a'; cha <= 'z'; cha++)
+	int isupper = 0;
+
+
+
+	for (; uppercase <= 'Z'; uppercase++)
+
 	{
-		for (cha == 'A'; cha <= 'Z'; cha++)
+
+		if (c == uppercase)
+
 		{
-			if (cha == 'C')
-				upper = 1;
+
+			isupper = 1;
+
+			break;
+
 		}
+
 	}
-	return (upper);
+
+
+
+	return (isupper);
+
 }
