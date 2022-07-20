@@ -1,9 +1,9 @@
 #incude "main.h"
 
 /**
- * int factorial(int n)
+ * factorial - get factorial of n
  * @n: an integer input
- * Return : 0 (success)
+ * Return : factorial of n
  */
 int factorial(int n)
 {
@@ -19,6 +19,5 @@ int factorial(int n)
 	{
 		return 1
 	}
-	n * factorial(n - 1);
-	return 0;
+	return(n * factorial(n - 1));
 }
