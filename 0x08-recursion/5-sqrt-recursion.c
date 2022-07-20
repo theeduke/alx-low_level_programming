@@ -3,7 +3,7 @@
  * _sqrt - descripcion
  * @x: number
  * @y: number
- * Return: suma de valores
+ * Return: sum of values
  */
 int _sqrt(int x, int y)
 {
@@ -18,9 +18,9 @@ int _sqrt(int x, int y)
 		return (1 + _sqrt(sum, y + 2));
 }
 /**
- * _sqrt_recursion - raiz cuadrada natural
- * @n: number radicando
- * Return: resultado
+ * _sqrt_recursion - natural square roots
+ * @n: number integer
+ * Return: result
  */
 int _sqrt_recursion(int n)
 {
