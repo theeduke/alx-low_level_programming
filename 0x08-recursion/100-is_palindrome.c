@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 int _strlen_recursion(char *s);
 int helper_palindrome(char *s, int len);
