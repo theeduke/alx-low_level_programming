@@ -1,0 +1,1 @@
+building of static libraries
