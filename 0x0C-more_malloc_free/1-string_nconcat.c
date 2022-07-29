@@ -1,51 +1,51 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * *string_nconcat - Function that concatenates two strings
  *
- * Return: Nothing.
- */
-void simple_print_buffer(char *buffer, unsigned int size)
-{
-  unsigned int i;
-
-  i = 0;
-  while (i < size)
-    {
-      if (i % 10)
-        {
-	  printf(" ");
-        }
-      if (!(i % 10) && i)
-        {
-	  printf("\n");
-        }
-      printf("0x%02x", buffer[i]);
-      i++;
-    }
-  printf("\n");
-}
-
-/**
- * main - check the code for Holberton School students.
+ * @s1: string 1
+ * @s2: string 2
+ * @n: max bytes of s2
  *
- * Return: Always 0.
+ * Return: Returned pointer shall point to a newly allocated space in memory
  */
-int main(void)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-  char *buffer;
+	char *a;
+	unsigned int x, n1 = 0, n2 = 0, i, j;
 
-  buffer = create_array(98, 'H');
-  if  (buffer == NULL)
-    {
-      printf("failed to allocate memory\n");
-      return (1);
-    }
-  simple_print_buffer(buffer, 98);
-  free(buffer);
-  return (0);
+	if (s1 != NULL)
+	{
+		while (s1[n1] != 0)
+			n1++;
+	}
+	else
+		s1 = "";
+	if (s2 != NULL)
+	{
+		while (s2[n2] != 0)
+			n2++;
+	}
+	else
+		s2 = "";
+
+	if (n < n2)
+		x = n;
+	else
+		x = n2;
+	a = malloc(sizeof(char) * (n1 + x + 1));
+
+	if (a == NULL)
+		return (NULL);
+	for (i = 0; i < n1; i++)
+	{
+		a[i] = s1[i];
+	}
+	for (j = 0; j < x; j++)
+	{
+		a[i + j] = s2[j];
+	}
+	a[i + j] = 0;
+
+	return (a);
 }
