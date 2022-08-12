@@ -1,11 +1,12 @@
 #include "lists.h"
 /**
- * document here
+ * print_list - print elements of linked list
+ * @h: pointer to the nexr node
+ * Return: number of nodes
  */
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	unsign int;
 
 	while (h != NULL)
 	{
