@@ -8,7 +8,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	count = 0;
+	size_t count = 0;
 
 	if (h == NULL)
 		printf("Make sure head pointer is not null");
