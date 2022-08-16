@@ -11,10 +11,8 @@ size_t print_listint(const listint_t *h)
 	size_t count = 0;
 
 	if (h == NULL)
-	{
 		printf("Make sure head pointer is not null\n");
-	}else
-	{
+
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);
@@ -22,7 +20,6 @@ size_t print_listint(const listint_t *h)
 		h = h->next;
 
 		count++;
-	}
 	}
 	return (count);
 }
