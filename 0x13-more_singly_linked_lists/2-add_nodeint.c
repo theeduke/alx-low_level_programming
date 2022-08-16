@@ -1,9 +1,12 @@
 #include "lists.h"
+
 /**
- * add_nodeint - add new node to the beginning of the list
- * @head: head of the list
- * @n: an integer
- * Return: address of new element
+ * add_nodeint - add a new node at the beginning
+ * of a linked list
+ * @head: head of a list.
+ * @n: n element.
+ *
+ * Return: address of the new element. NUll if it failed.
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
@@ -15,8 +18,8 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 
 	new->n = n;
-	new->next = head;
-	*head->new;
+	new->next = *head;
+	*head = new;
 
 	return (*head);
 }
