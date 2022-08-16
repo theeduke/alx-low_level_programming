@@ -12,17 +12,13 @@ size_t print_listint(const listint_t *h)
 
 	if (h == NULL)
 		printf("Make sure head pointer is not null");
-	struct listint_t *ptr = NULL;
-
-	ptr = h;
-
-	while (ptr != NULL)
+	while (h != NULL)
 	{
 		count++;
 
-		ptr = ptr->next;
+		h = h->next;
 	}
-	printf("%d", count);
+	printf("%ld", count);
 
 	return (count);
 }
