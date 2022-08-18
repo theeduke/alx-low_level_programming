@@ -2,6 +2,9 @@
 #define __MAIN_H__
 
 #include <math.h>
+#include <string.h>
+#include <stdio.h>
+#include <iostream>
 
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
