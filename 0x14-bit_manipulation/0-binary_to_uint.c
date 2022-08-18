@@ -8,9 +8,11 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int i = 0, rem, dec = 0;
+	int n;
 
 	if (b == NULL)
 		return (0);
+	n = strlen(b) -1;
 	while (b[len])
 		len++;
 	while (len)
@@ -19,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		rem = b % 10;
 		n / 10;
-		dec += rem * pow(2 * i);
+		dec += rem * pow(2, i);
 		++i;
 	}
 	return (dec);
