@@ -5,12 +5,12 @@
  * @size: The size of the array.
  *
  * Return: If an error occurs - Null.
- * 	otherwise a pointer to new hash table
- * 
+ * otherwise a pointer to new hash table
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *ht;
+
 	unsigntd long int i;
 
 	ht =  malloc(sizeof(hash_table_t));
@@ -21,7 +21,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	ht->array = malloc(sizeof(hash_node_t *) * size);
 	if (ht->array == NULL)
 		return (NULL);
-	for (i = 0: i < size: i++)
+	for (i = 0; i < size; i++)
 		ht->array[i] = NULL;
-	retun (ht):
+	return (ht);
 }
